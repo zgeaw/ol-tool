@@ -102,7 +102,7 @@ export default class WebGis {
     view.setZoom(zoom - 1);
   }
   // 加载geoJson
-  loadGeoJSON(params, style, callBack){
+  loadGeoJSON(params, callBack){
     const image = new CircleStyle({
       radius: 5,
       fill: '#ff0000',
@@ -220,7 +220,7 @@ export default class WebGis {
     
     // const polygon = feature.getGeometry();
     // this.view.fit(polygon, {padding: [170, 50, 30, 150]});
-    this.handlePolygon()
+    // this.handlePolygon()
   }
   // 注册点击事件
   handlePolygon(){
