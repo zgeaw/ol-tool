@@ -13,7 +13,10 @@ yarn add ol-tool
 </template>
 
 <script>
+// 加载工具类
 import WebGis from "ol-tool";
+//加载css
+import "ol-tool/dist/webGis.css";
 
 export default {
   data() {
