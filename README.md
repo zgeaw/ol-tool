@@ -1,8 +1,8 @@
 # ol-tool openlayers 地图加载工具类
 
 ```sh
-npm i @zgeaw/ol-tool
-yarn add @zgeaw/ol-tool
+npm i openlayer-tool
+yarn add openlayer-tool
 ```
 
 ### 示例 加载天地图
