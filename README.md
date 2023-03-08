@@ -1,8 +1,8 @@
 # ol-tool openlayers 地图加载工具类
 
 ```sh
-npm i ol-tool
-yarn add ol-tool
+npm i @zgeaw/ol-tool
+yarn add @zgeaw/ol-tool
 ```
 
 ### 示例 加载天地图
@@ -14,9 +14,9 @@ yarn add ol-tool
 
 <script>
 // 加载工具类
-import WebGis from "ol-tool";
+import WebGis from "@zgeaw/ol-tool";
 //加载css
-import "ol-tool/dist/webGis.css";
+import "@zgeaw/ol-tool/dist/webGis.css";
 
 export default {
   data() {
