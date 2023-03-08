@@ -14,9 +14,9 @@ yarn add @zgeaw/ol-tool
 
 <script>
 // 加载工具类
-import WebGis from "@zgeaw/ol-tool";
+import WebGis from "openlayer-tool";
 //加载css
-import "@zgeaw/ol-tool/dist/webGis.css";
+import "openlayer-tool/dist/webGis.css";
 
 export default {
   data() {
