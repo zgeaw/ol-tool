@@ -1,6 +1,5 @@
 import './style.less';
-import WebGis from './lib/webgis'
-
+import WebGis from './lib'
 let webgis = new WebGis({id: 'map'})
 
 // 初始化
@@ -15,14 +14,14 @@ webgis.initTdt('2067467061d44dcaccdfa7a6be739aa9', () => {
     minZoom: 5,
     maxZoom: 20
   }
-  let options = {
-    fillColor: '#ff0000',
-    strokeColor: '#333',
-    strokeWidth: 3,
-    strokeLineDash: [5, 5]
-  }
+  // let options = {
+  //   fillColor: '#ff0000',
+  //   strokeColor: '#333',
+  //   strokeWidth: 3,
+  //   strokeLineDash: [5, 5]
+  // }
   // 加载geoJson
-  webgis.loadGeoJSON(params, options, source =>{
+  webgis.loadGeoJSON(params, source =>{
     let feature = source[0].getGeometry().getCoordinates()
     console.log(6666, feature)
     // webgis.view.fit(source[0].getGeometry())

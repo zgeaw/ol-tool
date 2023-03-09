@@ -32,8 +32,7 @@ export default class WebGis {
     })
   }
   // 加载天地图
-  initTdt(mapKey, callBack) {
-    console.log('ol' , ol)    
+  initTdt(mapKey, callBack) { 
     // source: new ol.OSM()
     let tdtLayerVec = new TileLayer({
       source: new XYZ({
@@ -65,7 +64,6 @@ export default class WebGis {
       view: this.view
     })
     this.map.once('postrender', (imgSource) =>{
-      // console.log('6666postrender', imgSource)
       document.querySelectorAll(this.tooltipConfig)
       .forEach(el => {
         new bootstrap.Tooltip(el, {
@@ -191,7 +189,6 @@ export default class WebGis {
         xhr.onload = () => {
           if (xhr.status == 200) {
             const features = source.getFormat().readFeatures(xhr.responseText);
-            console.log(56465456, features)
             source.addFeatures(features);
             if(callBack){
               callBack(features)
@@ -211,11 +208,8 @@ export default class WebGis {
     })
     this.map.addLayer(layerSource);    
     
-    console.log(555, this.map.getView())
-    
     // setTimeout(() => {
     //   const feature = source.getFeatures();
-    //   console.log(6666, feature)
     // }, 3000)
     
     // const polygon = feature.getGeometry();
@@ -229,7 +223,7 @@ export default class WebGis {
     polygonClick.on('select',(e)=>{
       let polygon = e.selected[0].getGeometry()
       this.view.fit(polygon, {duration: 300, padding: [100, 100, 100, 100]});
-      console.log('point',e, polygon, this.view)
+      // console.log('point',e, polygon, this.view)
     })
   }
 }

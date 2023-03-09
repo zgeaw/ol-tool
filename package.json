@@ -1,6 +1,6 @@
 {
   "name": "openlayer-tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "directories": {
     "lib": "lib"
@@ -10,7 +10,7 @@
     "build": "vite build",
     "serve": "vite preview"
   },
-  "main": "dist/webGis.min.js",
+  "main": "scr/lib/index.js",
   "keywords": [
     "ol",
     "webgis",

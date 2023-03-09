@@ -26,7 +26,7 @@ export default defineConfig({
     sourcemap: false,
     emptyOutDir: true, // 构建时清空该目录
     rollupOptions: {
-      input: 'src/lib/webgis.js',
+      input: 'src/lib/index.js',
       output:{
         entryFileNames: `webGis.min.js`,
         chunkFileNames: `[name].js`,
